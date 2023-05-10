@@ -6,4 +6,5 @@ docker login -u "khoa0797" -p "dangkhoabro9x" docker.io
 
 docker push khoa0797/nginx-ubuntu:latest
 
-docker cp nginx-web-1:/etc/nginx .
+docker cp name-container:/etc/nginx .
+docker cp namefile  name-container:/media
