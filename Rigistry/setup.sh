@@ -14,7 +14,7 @@ services:
   ui:
     image: joxit/docker-registry-ui:static
     ports:
-      - 8080:80
+      - 8082:80
     environment:
       - REGISTRY_TITLE=My Private Docker Registry
       - REGISTRY_URL=http://registry:5000
