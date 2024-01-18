@@ -12,12 +12,12 @@ services:
       - registry-ui-net
 
   ui:
-    image: joxit/docker-registry-ui:static
+    image: joxit/docker-registry-ui:main
     ports:
       - 8082:80
     environment:
       - REGISTRY_TITLE=My Private Docker Registry
-      - REGISTRY_URL=http://registry:5000
+      - NGINX_PROXY_PASS_URL=http://registry:5000
       - DELETE_IMAGES=true
       - THEME=auto
     depends_on:
